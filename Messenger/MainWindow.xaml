@@ -1,0 +1,24 @@
+﻿<Controls:MetroWindow x:Class="Messenger.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:Messenger"
+        mc:Ignorable="d"
+        Title="АВТОРИЗАЦИЯ" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="130" ></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+           
+        </Grid.RowDefinitions>
+                
+       
+        <Button x:Name="btnAuth" Grid.Row="0" Content="Войти" Style="{StaticResource AccentedSquareButtonStyle}" Margin="303,59,61,41" Click="btnAuth_Click" />
+        <Image Grid.Row="0" IsEnabled="True" Source="Images/VkLogo.png" Focusable="True" RenderTransformOrigin="0.282,0.496" Margin="10,0,219,0"/>
+        <WebBrowser Grid.Row="1" Name="AuthBrowser" LoadCompleted="AuthBrowser_LoadedCompleted"></WebBrowser>
+    </Grid>
+
+       
+</Controls:MetroWindow>

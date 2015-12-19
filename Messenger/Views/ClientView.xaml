@@ -1,0 +1,27 @@
+﻿<Controls:MetroWindow x:Class="Messenger.Views.ClientView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+      xmlns:local="clr-namespace:Messenger.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="ВКОНТАКТЕ" Height="350" Width="525"
+      DataContext="{Binding Source={StaticResource Locator}, Path=Friends }">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Name="btnSend" Grid.Column="1" Margin="88,283,85,10" Command="{Binding SendMessage}" IsEnabled="True">Отправить</Button>
+        <Image IsEnabled="True" Source="Messenger/Images/VkLogo.png" Focusable="True" Margin="0,10,0,201"/>
+        <Button Name="btnSave" Grid.Column="0" Margin="86,283,85,10" Command="{Binding Save}">Сохранить</Button>
+        <ListView Name="lbxFriends" Grid.Column="0" Width ="200" Margin="29,132,29,41" ItemsSource="{Binding friends}" SelectedItem="{Binding SelectedFriend}"/>
+        <ListView Name="lbxChat" Grid.Column="1" Width ="200" Margin="32,10,27,107" ItemsSource="{Binding CurrentChat}"/>
+        <TextBox Name="tbxMessage" Grid.Column="1" Margin="32,223,27,60" Controls:TextBoxHelper.Watermark="Введите сообщение" Controls:TextBoxHelper.ClearTextButton="True" Text="{Binding Message,ValidatesOnDataErrors=True,  Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+    </Grid>
+
+</Controls:MetroWindow>

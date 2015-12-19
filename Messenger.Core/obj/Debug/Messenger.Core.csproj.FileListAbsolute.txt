@@ -1,0 +1,9 @@
+C:\Users\Korolev Serey\Desktop\Messenger\Messenger.Core\bin\Debug\Messenger.Core.dll
+C:\Users\Korolev Serey\Desktop\Messenger\Messenger.Core\bin\Debug\Messenger.Core.pdb
+C:\Users\Korolev Serey\Desktop\Messenger\Messenger.Core\obj\Debug\Messenger.Core.dll
+C:\Users\Korolev Serey\Desktop\Messenger\Messenger.Core\obj\Debug\Messenger.Core.pdb
+C:\Users\Korolev Serey\Desktop\Messenger\Messenger.Core\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Korolev Serey\Desktop\Messenger\Messenger.Core\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Korolev Serey\Desktop\Messenger\Messenger.Core\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Korolev Serey\Desktop\Messenger\Messenger.Core\obj\Debug\Messenger.Core.csprojResolveAssemblyReference.cache
+C:\Users\Korolev Serey\Desktop\Messenger\Messenger.Core\bin\Debug\DocX.dll
